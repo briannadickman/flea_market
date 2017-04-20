@@ -57,7 +57,7 @@ var collectableObject = {items: [ comicBook, fancyStuffedAnimal, jewelry, wine]}
 
 //updateBalance() -->add/subtract --> return accountBalance
 
-let myBalance = {
+let accountBalance = {
   amount: 100
 };
 
@@ -125,7 +125,7 @@ function changePrice(priceAdjustment) {
     fruitObject : fruitObject,
     collectableObject : collectableObject,
     electronicObject : electronicObject,
-    myBalance : myBalance,
+    accountBalance : accountBalance,
     currentPrice : currentPrice //testing
   };
 });
