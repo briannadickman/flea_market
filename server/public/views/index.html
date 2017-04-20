@@ -33,10 +33,9 @@
           <img class="image" ng-src="{{item.image}}" />
           <p ng-model = "item.name">Name: {{item.name}}</p>
           <p ng-model = "item.quanity">Quantity: {{item.quantity}}</p>
-          <p ng-model = "item.currentPrice">Current Price: {{item.currentPrice}}</p>
-          <p ng-model = "item.averagePrice">Average Price: {{item.averagePrice}}</p>
-          <p ng-model = "item.initialPrice">Initial Price: {{item.initialPrice}}</p>
-          <button ng-click = "sell.buyItem(item)" type="button" name="buy" class = "btn btn-primary">Buy</button>
+          <p ng-model = "item.currentPrice">Current Price: {{item.currentPrice | currency}}</p>
+          <p ng-model = "item.averagePrice">Average Price: {{item.averagePrice | currency}}</p>
+          <button ng-click = "sell.buyFunc(item)" type="button" name="buy" class = "btn btn-primary">Buy</button>
           <button ng-click = "sell.sellItem(item)" type="button" name="sell" class = "btn btn-primary">Sell</button>
         </div>
       </div>
@@ -46,10 +45,9 @@
           <img class="image" ng-src="{{item.image}}" />
           <p ng-model = "item.name">Name: {{item.name}}</p>
           <p ng-model = "item.quanity">Quantity: {{item.quantity}}</p>
-          <p ng-model = "item.currentPrice">Current Price: {{item.currentPrice}}</p>
-          <p ng-model = "item.averagePrice">Average Price: {{item.averagePrice}}</p>
-          <p ng-model = "item.initialPrice">Initial Price: {{item.initialPrice}}</p>
-          <button ng-click = "sell.buyItem(item)" type="button" name="buy" class = "btn btn-primary">Buy</button>
+          <p ng-model = "item.currentPrice">Current Price: {{item.currentPrice | currency}}</p>
+          <p ng-model = "item.averagePrice">Average Price: {{item.averagePrice | currency}}</p>
+          <button ng-click = "sell.buyFunc(item)" type="button" name="buy" class = "btn btn-primary">Buy</button>
           <button ng-click = "sell.sellItem(item)" type="button" name="sell" class = "btn btn-primary">Sell</button>
         </div>
       </div>
@@ -59,10 +57,9 @@
           <img class="image" ng-src="{{item.image}}" />
           <p ng-model = "item.name">Name: {{item.name}}</p>
           <p ng-model = "item.quanity">Quantity: {{item.quantity}}</p>
-          <p ng-model = "item.currentPrice">Current Price: {{item.currentPrice}}</p>
-          <p ng-model = "item.averagePrice">Average Price: {{item.averagePrice}}</p>
-          <p ng-model = "item.initialPrice">Initial Price: {{item.initialPrice}}</p>
-          <button ng-click = "sell.buyItem(item)" type="button" name="buy" class = "btn btn-primary">Buy</button>
+          <p ng-model = "item.currentPrice">Current Price: {{item.currentPrice | currency}}</p>
+          <p ng-model = "item.averagePrice">Average Price: {{item.averagePrice | currency}}</p>
+          <button ng-click = "sell.buyFunc(item)" type="button" name="buy" class = "btn btn-primary">Buy</button>
           <button ng-click = "sell.sellItem(item)" type="button" name="sell" class = "btn btn-primary">Sell</button>
         </div>
       </div>

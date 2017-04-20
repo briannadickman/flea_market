@@ -12,9 +12,7 @@ sell.sellItem = fleaMarketService.sellItem;
 
 
 
-sell.buyItem = function(item) {
-  console.log('Buys in Sell Controller');
-};
+sell.buyFunc = fleaMarketService.buyFunc;
 
 sell.fruitObject = fleaMarketService.fruitObject;
 sell.electronicObject = fleaMarketService.electronicObject;
