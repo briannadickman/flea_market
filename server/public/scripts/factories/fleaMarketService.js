@@ -120,7 +120,7 @@ function changePrice(priceAdjustment) {
 }
 
   return {
-    FleaMarketItem : FleaMarketItem,
+    // FleaMartetItem : FleaMarketItem,
     fruitObject : fruitObject,
     collectableObject : collectableObject,
     electronicObject : electronicObject,
