@@ -3,25 +3,28 @@
 //currentPrice
 //updateBalance() send se;; function to chris
 
-myApp.controller('SellController', ['fleaMarketService', function(fleaMarketService) {
+myApp.controller('SellController', ['fleaMarketService', '$interval', function(fleaMarketService, $interval) {
 console.log("sourced for Sell!");
 var sell = this;
 
-sell.sellItem = function(item) {
-  console.log("In Sell Controller");
-  // item.quantity -= item.quanity;
-  // item.currentPrice = item.currentPrice;
-  // return item;
+sell.sellItem = fleaMarketService.sellItem;
 
+
+
+
+sell.buyItem = function(item) {
+  console.log('Buys in Sell Controller');
 };
 
 sell.fruitObject = fleaMarketService.fruitObject;
 sell.electronicObject = fleaMarketService.electronicObject;
 sell.collectableObject = fleaMarketService.collectableObject;
+// sell.updater = fleaMarketService.updater;
 
-var setTimer = setInterval(function(){
+$interval(function(){
   fleaMarketService.updater();
   console.log("this ran");
+  console.log(fleaMarketService.fruitObject);
 }, 5000);
 
 //need Class from factory

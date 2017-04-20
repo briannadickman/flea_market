@@ -62,8 +62,8 @@ let accountBalance = {
 };
 
 let buyFunc = (thisItem) => {
-  if((myBalance.amount - thisItem.currentPrice) > 0){
-    myBalance.amount = myBalance.amount - thisItem.currentPrice;
+  if((accountBalance.amount - thisItem.currentPrice) > 0){
+    accountBalance.amount = accountBalance.amount - thisItem.currentPrice;
     thisItem.avgArray.push(thisItem.currentPrice);
   }
   else{
@@ -79,9 +79,9 @@ let averagingFunc = (thisItem) => {
   var avg = sum/thisItem.avgArray.length;
 };
 
-let sellFunc = (thisItem) => {
-  if((myBalance.amount + thisItem.currentPrice) < 10){
-    myBalance.amount = myBalance.amount + thisItem.currentPrice;
+let sellItem = (thisItem) => {
+  if((accountBalance.amount + thisItem.currentPrice) < 10){
+    accountBalance.amount = accountBalance.amount + thisItem.currentPrice;
   }
   else{
     return false;
@@ -134,6 +134,7 @@ function changePrice(thisItem, priceAdjustment) {
     collectableObject : collectableObject,
     electronicObject : electronicObject,
     accountBalance : accountBalance,
-    updater: updater
+    updater: updater,
+    sellItem: sellItem
   };
 });
