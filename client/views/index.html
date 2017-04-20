@@ -21,7 +21,7 @@
     <div > bank</div>
     <!-- Sell  -->
     <div ng-controller = "SellController as sell" >
-      <div ng-repeat="item in sell.fruitObject.item">
+      <div ng-repeat="item in sell.fruitObject.items">
         <div class="well col-md-3">
           <p class="image" ng-model = "item.image"> {{item.image}}</p>
           <p ng-model = "item.name">Name: {{item.name}}</p>
@@ -32,7 +32,7 @@
           <button ng-click = "sell.sellItem(item)" type="button" name="sell" class = "btn btn-primary">Sell</button>
         </div>
       </div>
-      <div ng-repeat="item in sell.collectableObject.item">
+      <div ng-repeat="item in sell.collectableObject.items">
         <div class="well col-md-3">
           <p class="image" ng-model = "item.image">{{item.image}}</p>
           <p ng-model = "item.name">Name: {{item.name}}</p>
@@ -43,7 +43,7 @@
           <button ng-click = "sell.sellItem(item)" type="button" name="sell" class = "btn btn-primary">Sell</button>
         </div>
       </div>
-      <div ng-repeat="item in sell.electronicObject.item">
+      <div ng-repeat="item in sell.electronicObject.items">
         <div class="well col-md-3">
           <p class="image" ng-model = "item.image"> {{item.image}}</p>
           <p ng-model = "item.name">Name: {{item.name}}</p>
