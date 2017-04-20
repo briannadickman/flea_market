@@ -19,8 +19,10 @@ sell.fruitObject = fleaMarketService.fruitObject;
 sell.electronicObject = fleaMarketService.electronicObject;
 sell.collectableObject = fleaMarketService.collectableObject;
 
-console.log(sell.fruitObject);
-
+var setTimer = setInterval(function(){
+  fleaMarketService.updater();
+  console.log("this ran");
+}, 5000);
 
 //need Class from factory
 

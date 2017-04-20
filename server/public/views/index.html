@@ -31,6 +31,7 @@
           <p ng-model = "item.currentPrice">Current Price: {{item.currentPrice}}</p>
           <p ng-model = "item.averagePrice">Average Price: {{item.averagePrice}}</p>
           <p ng-model = "item.initialPrice">Initial Price: {{item.initialPrice}}</p>
+          <button ng-click = "buy.buyItem(item)" type="button" name="buy" class = "btn btn-primary">Buy</button>
           <button ng-click = "sell.sellItem(item)" type="button" name="sell" class = "btn btn-primary">Sell</button>
         </div>
       </div>
@@ -42,6 +43,7 @@
           <p ng-model = "item.currentPrice">Current Price: {{item.currentPrice}}</p>
           <p ng-model = "item.averagePrice">Average Price: {{item.averagePrice}}</p>
           <p ng-model = "item.initialPrice">Initial Price: {{item.initialPrice}}</p>
+          <button ng-click = "buy.buyItem(item)" type="button" name="buy" class = "btn btn-primary">Buy</button>
           <button ng-click = "sell.sellItem(item)" type="button" name="sell" class = "btn btn-primary">Sell</button>
         </div>
       </div>
@@ -53,16 +55,10 @@
           <p ng-model = "item.currentPrice">Current Price: {{item.currentPrice}}</p>
           <p ng-model = "item.averagePrice">Average Price: {{item.averagePrice}}</p>
           <p ng-model = "item.initialPrice">Initial Price: {{item.initialPrice}}</p>
+          <button ng-click = "buy.buyItem(item)" type="button" name="buy" class = "btn btn-primary">Buy</button>
           <button ng-click = "sell.sellItem(item)" type="button" name="sell" class = "btn btn-primary">Sell</button>
         </div>
       </div>
-    </div>
-
-    <div ng-controller="BuyController as ctrl">
-      <form name="buyForm" ng-submit="ctrl.submit()">
-        <input type="submit" value="Buy">
-      </form>
-      {{ctrl.currentPrice.price}}
     </div>
 
   </body>
