@@ -89,6 +89,7 @@ let sellFunc = (thisItem) => {
 };
 
 //adjPrice
+
 var currentPrice = {
   price: 1.35
 }; //testing
