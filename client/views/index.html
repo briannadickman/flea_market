@@ -16,15 +16,20 @@
 
   </head>
   <body>
-    <h1>Flea Market</h1>
-    <p>Instructions</p>
-    <div ng-controller="BankController as account">
-       Account balance: {{account.accountBalance.amount}}
-     </div>
-    <!-- Sell  -->
+    <div class="jumbotron">
+      <h1>Flea Market</h1>
+      <div class = "account" ng-controller="BankController as account">
+         Account balance: ${{account.accountBalance.amount}}
+       </div>
+    </div>
+
+    <h2>Welcome to the World's Best Flea Market</h2>
+
+
     <div ng-controller = "SellController as sell" >
+      <h2>Fruit Basket</h2>
       <div ng-repeat="item in sell.fruitObject.items">
-        <div class="well col-md-3">
+        <div class="item well col-md-3">
           <img class="image" ng-src="{{item.image}}" />
           <p ng-model = "item.name">Name: {{item.name}}</p>
           <p ng-model = "item.quanity">Quantity: {{item.quantity}}</p>
@@ -35,8 +40,9 @@
           <button ng-click = "sell.sellItem(item)" type="button" name="sell" class = "btn btn-primary">Sell</button>
         </div>
       </div>
+      <h2>Collectables</h2>
       <div ng-repeat="item in sell.collectableObject.items">
-        <div class="well col-md-3">
+        <div class="item well col-md-3">
           <img class="image" ng-src="{{item.image}}" />
           <p ng-model = "item.name">Name: {{item.name}}</p>
           <p ng-model = "item.quanity">Quantity: {{item.quantity}}</p>
@@ -47,8 +53,9 @@
           <button ng-click = "sell.sellItem(item)" type="button" name="sell" class = "btn btn-primary">Sell</button>
         </div>
       </div>
+      <h2>Electronics</h2>
       <div ng-repeat="item in sell.electronicObject.items">
-        <div class="well col-md-3">
+        <div class="item well col-md-3">
           <img class="image" ng-src="{{item.image}}" />
           <p ng-model = "item.name">Name: {{item.name}}</p>
           <p ng-model = "item.quanity">Quantity: {{item.quantity}}</p>

@@ -1,0 +1,28 @@
+body {
+  background-color: black;
+  text-align: center;
+
+}
+
+.jumbotron {
+  background-image: url('http://img05.deviantart.net/5784/i/2012/132/b/1/vendor_tent_png_by_dbszabo1-d4zhgfp.png');
+
+}
+h2 {
+  color: #f3edfc;
+}
+
+.account {
+  font-size: 40px;
+}
+
+.item {
+  text-align: center;
+  background-color: #f3edfc;
+}
+
+.image {
+  height: 200px;
+  background-color: #f3edfc;
+  align-items: center;
+}
