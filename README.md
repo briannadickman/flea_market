@@ -1,5 +1,3 @@
-# flea_market
-
 # Flea Market 
 #### Group Full-Stack project
 
